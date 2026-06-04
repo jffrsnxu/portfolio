@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jefferson Ursua — Full-Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Portfolio</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home" style="border-top:none; padding:0;">
+  <canvas id="particles"></canvas>
+
+  <div class="hero-left">
+    <div class="hero-tag">
+      <span class="status-dot"></span>Full-Stack Developer
+    </div>
+
+    <div class="hero-name" id="hname"></div>
+
+    <div class="typewriter-wrap">
+      <span id="typewriter"></span><span class="cursor-blink">_</span>
+    </div>
+
+    <p class="hero-desc">I build fast, scalable web applications from database to interface — obsessing over the details on both ends of the stack.</p>
+
+    <div class="tech-stack">
+      <span class="tech-pill">Java</span>
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">HTML</span>
+      <span class="tech-pill">Javascript</span>
+      <span class="tech-pill">SQL</span>
+      <span class="tech-pill">React</span>
+      <span class="tech-pill">Figma</span>
+      <span class="tech-pill">Photoshop</span>
+      <span class="tech-pill">Premiere</span>
+    </div>
+
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">View Projects</button>
+      <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="images/Mugshot.png" alt="Jefferson Ursua">
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label" data-num="01 —">About</div>
+  <div class="about-grid">
+    <div class="about-content">
+      <h2 class="about-heading">Who Am I</em></h2>
+      <p class="about-body">I'm Jefferson, a Full-Stack Developer based in Manila. I specialize in building end-to-end web applications — from architecting REST APIs and databases to crafting polished, performant frontends.</p>
+      <p class="about-body">From responsive interfaces to robust backend systems, I focus on creating solutions that are both functional and enjoyable to use.</p>
+      <div class="stats-row">
+        <div><span class="stat-num">10+</span><span class="stat-label">Projects Completed</span></div>
+        <div><span class="stat-num">3+</span><span class="stat-label">Years coding</span></div>
+        <div><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+      </div>
+    </div>
+    <div class="about-image-box">
+    <img src="images/about.png" alt="Jefferson Ursua" class="about-image">
+</div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="section-label" data-num="02 —">Selected Work</div>
+  <div class="projects-header">
+    <h2 class="projects-heading">Projects</h2>
+    <span class="projects-count">3 selected works</span>
+  </div>
+  <div class="projects-grid">
+
+    <a href="https://myvacavibes.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+    <div class="project-card">
+      <div class="project-num">01</div>
+      <div class="project-thumb">
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+          <img src="images/vacavibes.png" alt="My Vaca Vibes">
+      </div>
+      <h3 class="project-title">My Vaca Vibes</h3>
+      <p class="project-desc">
+      Luxury vacation rental platform connecting travelers, property owners, and travel advisors through curated stays, concierge-style support, and premium hospitality experiences.
+      </p>
+      <div class="project-tags">
+          <span class="tag">WordPress</span>
+          <span class="tag">Hospitality</span>
+          <span class="tag">Booking Platform</span>
+          <span class="tag">UX Design</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    </a>
+
+    <a href="https://lantern-press.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+    <div class="project-card">
+      <div class="project-num">02</div>
+      <div class="project-thumb">
+          <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <img src="images/lanternpress.png" alt="Lantern Press">
+      </div>
+      <h3 class="project-title">Lantern Press</h3>
+      <p class="project-desc">
+      Publishing and digital content platform showcasing books, reflective writing, children's stories, travel narratives, and business guides within a thoughtfully curated online library.
+      </p>
+      <div class="project-tags">
+          <span class="tag">Publishing</span>
+          <span class="tag">Content Management</span>
+          <span class="tag">WordPress</span>
+          <span class="tag">SEO</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    </a>
+
+    <a href="https://emsfitnessbody.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-thumb">
+          <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <img src="images/ems.png" alt="EMS">
+      </div>
+      <h3 class="project-title">EMS Fitness Body</h3>
+      <p class="project-desc">
+      Modern wellness and fitness franchise platform promoting EMS-powered training, body analytics, and performance-focused programs designed for efficient, data-driven results.
+      </p>
+      <div class="project-tags">
+          <span class="tag">Fitness Tech</span>
+          <span class="tag">Wellness</span>
+          <span class="tag">Lead Generation</span>
+          <span class="tag">Responsive Design</span>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+    </a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+  <div class="section-label" data-num="03 —">
+    Skills
+  </div>
+
+  <div class="skills-intro">
+    <h2 class="skills-heading">
+      Technologies I use to <em>build</em><br>
+      modern digital products.
+    </h2>
+
+    <p class="skills-sub">
+      From frontend interfaces to backend systems,
+      I focus on scalable architecture, clean code,
+      and smooth user experiences.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+
+    <!-- FRONTEND -->
+    <div class="skill-group">
+
+      <div class="skill-group-title">
+        ✦ Frontend
+      </div>
+
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <div class="skill-name">
+            React / Next.js
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            JavaScript / TypeScript
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Tailwind CSS
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Responsive Design
+            <span>Advanced</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BACKEND -->
+    <div class="skill-group">
+
+      <div class="skill-group-title">
+        ◉ Backend
+      </div>
+
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Node.js / Express.js
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            PostgreSQL / MySQL
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Python
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            REST APIs
+            <span>Experienced</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- DEVOPS -->
+    <div class="skill-group">
+
+      <div class="skill-group-title">
+        ▲ DevOps & Tools
+      </div>
+
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Docker
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Git / GitHub
+            <span>Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Vercel
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            AWS Basics
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- DESIGN -->
+    <div class="skill-group">
+
+      <div class="skill-group-title">
+        ◆ Design
+      </div>
+
+      <div class="skill-items">
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Figma
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            UI/UX Design
+            <span>Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Photoshop
+            <span>Experienced</span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">
+            Wireframing
+            <span>Intermediate</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label" data-num="04 —">Contact</div>
+  <div class="contact-inner">
+    <div>
+      <h2 class="contact-heading">Let's build<br>something <em>great</em><br>together.</h2>
+      <p class="contact-sub">Open to freelance projects, full-time roles, and interesting collaborations. Response within 24 hours.</p>
+      <div class="contact-links">
+        <a class="contact-link"><span class="contact-link-icon">✉</span>jeffersonursua.ju@email.com</a>
+        <a class="contact-link"><span class="contact-link-icon">in</span>www.linkedin.com/in/jefferson-ursua-b1074a25b</a>
+        <a class="contact-link"><span class="contact-link-icon">➤</span>https://t.me/jffrsnxu</a>
+        <a class="contact-link"><span class="contact-link-icon">✆</span>+63 917-150-1357</a>
+      </div>
+    </div>
+    <div>
+      <form id="contactForm">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="from_name"
+            placeholder="Your name"
+            required
+          >
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            name="from_email"
+            placeholder="your@email.com"
+            required
+          >
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea
+            class="form-textarea"
+            name="message"
+            placeholder="Tell me about your project..."
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="btn-primary"
+          style="width:100%;"
+          id="sendBtn"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">©  Jefferson Ursua — Full-Stack Developer</span>
+  <button class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
