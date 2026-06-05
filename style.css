@@ -406,6 +406,17 @@
   nav{
     padding:1rem 2rem;
   }
+  .navbar {
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.4s ease;
+    }
+    .navbar.show {
+        top: 0;
+    }
 
   .hero{
     grid-template-columns:1fr;
@@ -417,6 +428,7 @@
     padding:8rem 2rem 3rem;
     text-align:center;
     align-items:center;
+    top: -100px;
   }
 
   .hero-desc{
@@ -443,6 +455,10 @@
     grid-template-columns:1fr;
     gap:3rem;
   }
+  .about-content{
+      align-items: center;
+      justify-content: center;
+    }
 
   .about-image-box{
     min-height:auto;
@@ -454,8 +470,11 @@
   }
 
   .projects-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: 1fr;
   }
+  .projects-header{
+      text-align:center;
+    }
 
   .skills-grid{
     grid-template-columns:repeat(2,1fr);
@@ -472,7 +491,7 @@
 
     nav{
       padding:1rem;
-      flex-direction:column;
+      flex-direction:row;
       gap:1rem;
       
     }
@@ -625,10 +644,34 @@
       order:2;
     }
 
+    .about-grid{
+      grid-template-columns: 1fr;
+    }
+
+    .about-image-box{
+      order: 1;
+    }
+
+    .about-content{
+      order: 2;
+    }
+
   }
 
-  /* Tablet & Mobile */
   @media (max-width: 1024px) {
+
+    .hero{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .hero-right{
+      order:1;
+    }
+
+    .hero-left{
+      order:2;
+    }
 
     .about-grid{
       grid-template-columns: 1fr;
@@ -643,3 +686,79 @@
     }
 
   }
+
+ @media (max-width: 1366px) {
+
+  /* Navigation */
+  nav{
+    padding: 1.25rem 3rem;
+  }
+
+  /* Hero */
+  .hero-left{
+    right: 0;
+    padding: 8rem 3rem 5rem;
+  }
+
+  .hero-right img{
+    width: 560px;
+    bottom: 80px;
+  }
+
+  .hero-right::after{
+    display: none;
+  }
+
+  .hero-right::before{
+    bottom: 80px;
+  }
+
+  .hero-name{
+    font-size: clamp(2.8rem, 4vw, 4rem);
+  }
+
+  /* Sections */
+  section{
+    padding: 5rem 3rem;
+  }
+
+  /* About */
+  .about-grid{
+    gap: 3rem;
+  }
+
+  .about-image{
+    width: 90%;
+  }
+
+  .stats-row{
+    gap: 2rem;
+  }
+
+  /* Projects */
+  .project-card{
+    padding: 2rem;
+  }
+
+  /* Skills */
+  .skill-group{
+    padding: 1.5rem;
+  }
+  .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  /* Contact */
+  .contact-inner{
+    gap: 3rem;
+  }
+
+  /* Footer */
+  footer{
+    padding: 2rem 3rem;
+  }
+
+}
+  
